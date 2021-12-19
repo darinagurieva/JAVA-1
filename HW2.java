@@ -12,35 +12,25 @@ class HW2 {
         checkPositiveOrNegative(11);
         System.out.println(boolCheckPositiveOrNegative(-4));
         System.out.println(boolCheckPositiveOrNegative(4));
-        printNTimes(3);
+        printNTimes("THIS IS JAAAAVAAAA", 5);
     }
 
     static Boolean checkSum(int a, int b) {
-        int summa = a + b;
-        if (summa >= 10 && a + b <= 20)
-            return true;
-        else
-            return false;
+        return a + b >= 10 && a + b <= 20;
     }
 
     static void checkPositiveOrNegative(int a) {
-        if (a >= 0)
-            System.out.println("This digit is " + a + " and it is positive");
-        else
-            System.out.println("This digit is " + a + " and it is negative");
+        System.out.println(a >= 0 ? "Positive" : "Negative");
     }
 
     static boolean boolCheckPositiveOrNegative(int a) {
-        if (a < 0)
-            return true;
-        else
-            return false;
+        return a < 0;
     }
 
-    static void printNTimes(int N) {
+    static void printNTimes(String s, int N) {
         int i;
         for (i = 0; i < N; i++) {
-            System.out.println("This is JAAAAAVAAAAAA!");
+            System.out.println(s);
         }
     }
 }
